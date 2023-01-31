@@ -9,8 +9,8 @@ p {
     text-indent: 50px;
 }
 
-/* Formatação de imagens com legendas */
 
+/* Formatação de imagens com legendas */
 figure.sub-image {
     position: relative;
     border: 8px solid white;
@@ -37,4 +37,10 @@ figure.sub-image figcaption {
 
 figure.sub-image:hover figcaption {
     opacity: 1;
+}
+
+
+/* Formataçao do menu */
+nav#menu ul{
+    
 }

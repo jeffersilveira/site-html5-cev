@@ -1,12 +1,27 @@
-/* @charset "UTF-8"; */
+@charset "UTF-8";
 
 body {            
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
 }
+
+div#interface {
+    width: 70rem;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+header#id-header img#icon {
+    position: absolute;
+    left: 67rem;  /* 750px */
+    top: 50px;
 }
 
 
@@ -50,7 +65,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 37rem;    /* model value 300px */
 }
 
 nav#menu li {

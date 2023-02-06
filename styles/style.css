@@ -131,6 +131,46 @@ section#main-content {
     padding-right: 15px;
 }
 
+table#spec-table {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#spec-table td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#spec-table td.left-col {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+}
+
+table#spec-table td.right-col {
+    background-color: #cecece;
+    text-align: left;
+}
+
+table#spec-table caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#spec-table caption span {
+    display: block;
+    float: right;
+    font-size: 7pt;
+    margin-top: 10px;
+}
+
 aside#news-aside {
     display: block;
     width: 400px;

@@ -5,6 +5,11 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css"/>
 </head>
+<script>
+    function changeImage(image){
+        document.getElementById('icon').src = image;
+    };
+</script>
 <body>
     <div id="interface">
         <header id="id-header">
@@ -18,11 +23,11 @@
         <nav id="menu">
         <h1>Menu Principal</h1>
         <ul type="disc">
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="specs.html">Especificações</a> </li>
-            <li><a href="pictures.html">Fotos</a></li>
-            <li><a href="media.html">Multimídia</a></li>
-            <li><a href="contact-us.html">Fale conosco</a></li>
+            <li onmouseover="changeImage('images/home.png')" onmouseout="changeImage('images/glass-oculos-preto-peq.png')"><a href="index.html">Home</a> </li>
+            <li onmouseover="changeImage('images/especificacoes.png')" onmouseout="changeImage('images/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a> </li>
+            <li onmouseover="changeImage('images/fotos.png')" onmouseout="changeImage('images/glass-oculos-preto-peq.png')"><a href="pictures.html">Fotos</a></li>
+            <li onmouseover="changeImage('images/multimidia.png')" onmouseout="changeImage('images/glass-oculos-preto-peq.png')"><a href="media.html">Multimídia</a></li>
+            <li onmouseover="changeImage('images/contato.png')" onmouseout="changeImage('images/glass-oculos-preto-peq.png')"><a href="contact-us.html">Fale conosco</a></li>
         </ul>
         </nav>
         </header>

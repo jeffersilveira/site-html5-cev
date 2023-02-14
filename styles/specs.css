@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+section#content {
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-spec {
+    width: 460px;
+    height: 280px;
+    border: none;
+    /* overflow: hidden; */     /*aplicado no body do arquivo google-glass.html*/
+}

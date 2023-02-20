@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <script lang="javascript" src="javascript/funcoes.js"></script>
 <body>
@@ -28,16 +29,34 @@
         </nav>
         </header>
 
-        Glass > Multimídia
-        Sons e Vídeos
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
+        <section id="content-full">
+            <article id="main-news">
+                <header id="art-header">
+                    <hgroup>
+                        <h3>Glass > Multimídia </h3>
+                        <h1>Sons e Vídeos </h1>
+                        <h2>por Jefferson Silveira </h2>
+                        <h3 class="right">Atualizado em 20/Fevereiro/1812 </h3>
+                
+                
+                    </hgroup>
+                    
+                </header>
 
+                <div id="tv-radio">
+                    <audio id="music" controls>
+                        <source src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+                        Desculpe! O navegador não suporta este Audio =/
+                    </audio>
 
-        Áudio e Vídeo
+                    <video id="movie" controls poster="images/video-mini03.jpg">
+                        <source src="media/getting-started.mp4" type="video/mp4"/>
+                        Desculpe! O navegador não suporta este Video =/
+                    </video>
+                </div>
 
-        [AQUI ENTRA UM VÍDEO]
-        [AQUI ENTRA UM ÁUDIO]
+            </article>
+        </section>
 
         <footer id="footer">            
             <p>Copyright &copy; 1812 - by Jefferson Silveira <br/>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/form.css"/>
 </head>
 <script lang="javascript" src="javascript/funcoes.js"></script>
 <body>
@@ -28,38 +29,64 @@
         </nav>
         </header>
 
-        Fale Conosco > Contato
-        Formulário de Contato
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
+        <section id="content-full">
+            <article id="main-news">
+                <header id="art-header">
+                    <hgroup>
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Jefferson Silveira</h2>
+                        <h3 class="right">Atualizado em 22/Fevereiro/1812</h3>
+                    </hgroup>
+                </header>
 
-        Identificação do Usuário
-            Nome:
-            Senha:
-            E-mail:
-            Sexo:
-                - Masculino
-                - Feminino
-            Data de Nascimento:
+                <form action="">
+                    <fieldset id="data-user">
+                        <legend>Identificação do Usuário </legend>
+                            <p><label for="cName"> Nome: </label><input type="text" name="tName" id="cName" size="20" maxlength="30" placeholder="Nome completo"> </p>
 
-        Endereço do Usuário
-            Logradouro:
-            Número:
-            Estado:
-            Cidade:
+                            <p>Senha: <input type="password" name="tPassword" id="cPassword" size="8" maxlength="8" placeholder="Oito dígitos"></p>
 
-        Mensagem do Usuário
-            Grau de Urgência:
-            Mensagem:
+                            <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"> </p>
 
-        Quero um Google Glass
-            Gostaria de adquirir um Google Glass quando disponível
-            Cor:
-            Quantidade:
-            Preço Total: R$
+                            <fieldset id="gender"> <legend>Sexo: </legend>
+                                <input type="radio" name="tGender" id="cFemale"> <label for="cFemale">Feminino</label> <br/>
+                                <input type="radio" name="tGender" id="cMale"> <label for="cMale">Masculino</label> <br/>
+                                <input type="radio" name="tGender" id="cOther"> <label for="cOther">Outro</label> <br/>
+                            </fieldset>
 
+                            <p>Data de Nascimento: <input type="date" name="tDate" id="cDate"> </p>
+                    </fieldset>
+            
+                    <fieldset id="address">
+                        <legend>Endereço do Usuário </legend>
+                            <p>Logradouro: <input type="text" name="tStreet" id="cStreet" size="13" maxlength="50" placeholder="Rua, Av, Trav, etc."> </p>
+                            <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="999999"> </p>
+                            <p>Estado: </p>
+                            <p>Cidade: </p>
+                    </fieldset>
 
-        [BOTÃO ENVIAR]
+                    <fieldset id="message">
+                        <legend>Mensagem do Usuário </legend>
+                            Grau de Urgência:
+                            Mensagem:
+                    </fieldset>
+            
+                    <fieldset id="order-user">
+                        <legend>Quero um Google Glass </legend>
+                            Gostaria de adquirir um Google Glass quando disponível
+                            Cor:
+                            Quantidade:
+                            Preço Total: R$
+                    </fieldset>            
+            
+                    [BOTÃO ENVIAR]
+
+                </form>
+                
+            </article>
+        </section>
+
 
         <footer id="footer">            
             <p>Copyright &copy; 1812 - by Jefferson Silveira <br/>

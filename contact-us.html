@@ -54,9 +54,11 @@
                             </p>
 
                             <fieldset id="gender"> <legend>Sexo: </legend>
-                                <input type="radio" name="tGender" id="cFemale"> <label for="cFemale">Feminino</label> <br/>
-                                <input type="radio" name="tGender" id="cMale"> <label for="cMale">Masculino</label> <br/>
-                                <input type="radio" name="tGender" id="cOther"> <label for="cOther">Outro</label> <br/>
+                                <input type="radio" name="tGender" id="cM-cis"> <label for="cM-cis">Mulher Cis</label> <br/>
+                                <input type="radio" name="tGender" id="cH-cis"> <label for="cH-cis">Homem Cis</label> <br/>
+                                <input type="radio" name="tGender" id="cM-Trans"> <label for="cM-Trans">Mulher Trans</label> <br/>
+                                <input type="radio" name="tGender" id="cH-Trans"> <label for="cH-Trans">Homem Trans</label> <br/>
+                                <label for="cOther"> Outro: </label> <input type="text" name="tOther" id="cOther" size="15" maxlength="30" placeholder="Digite"> <br/>
                             </fieldset>
 
                             <p><label for="cDate">Data de Nascimento: </label>
@@ -70,7 +72,7 @@
                                 <input type="text" name="tStreet" id="cStreet" size="13" maxlength="50" placeholder="Rua, Av, Trav, etc.">
                             </p>
                             <p><label for="cNum">Número: </label>
-                                <input type="number" name="tNum" id="cNum" min="0" max="999999">
+                                <input type="number" name="tNum" id="cNum" min="0" max="999999" placeholder="n°.">
                             </p>
                             <p><label for="cState">Estado: </label>
                                 <select name="tState" id="cState">
@@ -103,16 +105,20 @@
 
                     <fieldset id="message">
                         <legend>Mensagem do Usuário </legend>
-                            Grau de Urgência:
-                            Mensagem:
+                            <p><label for="cUrgency"> Grau de Urgência:</label>
+                                Min <input type="range" name="tUrgency" id="cUrgency" min="1" max="5" step="1"> Max
+                            </p>
+                            <p><label for="cMsg"> Mensagem:</label>
+                                <textarea name="tMsg" id="cMsg" cols="30" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+                            </p>
                     </fieldset>
             
                     <fieldset id="order-user">
                         <legend>Quero um Google Glass </legend>
-                            Gostaria de adquirir um Google Glass quando disponível
-                            Cor:
-                            Quantidade:
-                            Preço Total: R$
+                            <p><label for="cOrder">Gostaria de adquirir um Google Glass quando disponível</label> </p>
+                            <p><label for="cColor"> Cor:</label></p>
+                            <p><label for="cQuant"> Quantidade:</label></p>
+                            <p><label for="cPrice"> Preço Total: R$</label></p>
                     </fieldset>            
             
                     [BOTÃO ENVIAR]

@@ -5,8 +5,15 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/form.css"/>
+    <script lang="javascript" src="javascript/funcoes.js"></script>
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cQuant').value);
+            tot = qtd * 1500;
+            document.getElementById('cPrice').value = tot;
+        }
+    </script>
 </head>
-<script lang="javascript" src="javascript/funcoes.js"></script>
 <body>
     <div id="interface">
         <header id="id-header">
@@ -40,7 +47,7 @@
                     </hgroup>
                 </header>
 
-                <form method="post" id="fContact" action="mailto:contato@exemplo.com">
+                <form method="post" id="fContact" action="mailto:contato@exemplo.com" oninput="calc_total();">
                     <fieldset id="data-user">
                         <legend>Identificação do Usuário </legend>
                             <p><label for="cName"> Nome: </label>
@@ -115,13 +122,26 @@
             
                     <fieldset id="order-user">
                         <legend>Quero um Google Glass </legend>
-                            <p><label for="cOrder">Gostaria de adquirir um Google Glass quando disponível</label> </p>
-                            <p><label for="cColor"> Cor:</label></p>
-                            <p><label for="cQuant"> Quantidade:</label></p>
-                            <p><label for="cPrice"> Preço Total: R$</label></p>
-                    </fieldset>            
+                            <p>
+                                <input type="checkbox" name="tOrder" id="cOrder" checked>
+                                <label for="cOrder">Gostaria de adquirir um Google Glass quando disponível</label> 
+                            </p>
+                            <p>
+                                <label for="cColor"> Cor:</label>
+                                <input type="color" name="tColor" id="cColor" value="#0000FF">
+                            </p>
+                            <p>
+                                <label for="cQuant"> Quantidade:</label>
+                                <input type="number" name="tQuant" id="cQuant" min="0" max="5" value="0">
+                            </p>
+                            <p>
+                                <label for="cPrice"> Preço Total: R$</label>
+                                <input type="text" name="tPrice" id="cPrice" placeholder="Total a Pagar" readonly>
+                            </p>
+                    </fieldset>
             
-                    [BOTÃO ENVIAR]
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <input type="image" name="tEnviar" src="images/botao-enviar.png">
 
                 </form>
                 
